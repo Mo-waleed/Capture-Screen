@@ -1,0 +1,51 @@
+:root {
+  --main-color: #4a98f7;
+}
+body {
+  padding: 0 30px;
+}
+#src-btn {
+  position: fixed;
+  left: 50%;
+  bottom: 15px;
+  transform: translate(-50%, -50%);
+  outline: none;
+  border: none;
+  background: var(--main-color);
+  color: #fff;
+  font-size: 1rem;
+  padding: 15px 25px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+.src-preview {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+}
+.src-preview.show {
+  display: block;
+}
+.src-preview .screenshot {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  /* background: #fff; */
+  width: 70%;
+  top: 50%;
+  aspect-ratio: 16 / 9;
+}
+.src-preview .screenshot img {
+  width: 100%;
+}
+.screenshot #close-btn {
+  position: absolute;
+  right: -25px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
